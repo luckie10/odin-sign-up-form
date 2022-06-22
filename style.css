@@ -19,14 +19,13 @@ body {
 }
 
 .splash {
-	width: 40vw;
 	height: 100vh;
 	background-image: url(./assets/leafs.jpg);
 	background-size: cover;
-	scale: (1.2);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex: 2;
 }
 
 .logo {
@@ -58,4 +57,24 @@ body {
 
 .credit a {
 	color: white;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 4;
+}
+
+.main > form {
+	padding: 0 250px 20px 50px;
+}
+
+.form-description {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.form-description p {
+	margin-bottom: 30px;
 }
