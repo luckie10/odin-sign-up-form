@@ -1,12 +1,61 @@
 :root {
 	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 *, *::before, *::after {
 	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 @font-face {
 	font-family: Norse-Bold;
 	src: url(./assets/Norse-Bold.otf);
+}
+
+body {
+	display: flex;
+}
+
+.splash {
+	width: 40vw;
+	height: 100vh;
+	background-image: url(./assets/leafs.jpg);
+	background-size: cover;
+	scale: (1.2);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo {
+	background-color: rgba(0,0,0,50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	margin-top: 200px;
+}
+
+.logo > img {
+	width: 100px;
+}
+
+.logo > h1 {
+	color: white;
+	font-family: Norse-Bold;
+	font-size: 100px;
+}
+
+.credit {
+	color: white;
+	margin-top: auto;
+	text-align: center;
+	padding: 12px;
+	font-size: 0.8rem;
+}
+
+.credit a {
+	color: white;
 }
